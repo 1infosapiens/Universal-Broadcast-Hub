@@ -1,12 +1,13 @@
 import { Hero } from "@/components/hero";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { Scale, Brain, BarChart2, Radio, TrendingUp, Music2, Camera, Globe2, Shield, ArrowRight, CheckCircle } from "lucide-react";
+import { Scale, Brain, BarChart2, Radio, TrendingUp, Music2, Camera, Globe2, Shield, ArrowRight, CheckCircle, ExternalLink } from "lucide-react";
 
 const programmes = [
   {
     code: "LLB",
     title: "Law",
+    href: "/programmes/law",
     icon: Scale,
     color: "bg-blue-50 border-blue-200",
     iconColor: "text-blue-700",
@@ -16,6 +17,7 @@ const programmes = [
   {
     code: "BSc",
     title: "Applied Psychology",
+    href: "/programmes/psychology",
     icon: Brain,
     color: "bg-purple-50 border-purple-200",
     iconColor: "text-purple-700",
@@ -25,6 +27,7 @@ const programmes = [
   {
     code: "BA",
     title: "Project Management",
+    href: "/programmes/project-management",
     icon: BarChart2,
     color: "bg-green-50 border-green-200",
     iconColor: "text-green-700",
@@ -34,6 +37,7 @@ const programmes = [
   {
     code: "BA",
     title: "Communication / Journalism / Marketing / Public Relations",
+    href: "/programmes/communication",
     icon: Radio,
     color: "bg-orange-50 border-orange-200",
     iconColor: "text-orange-700",
@@ -43,6 +47,7 @@ const programmes = [
   {
     code: "BA",
     title: "Entrepreneurship / International Business",
+    href: "/programmes/entrepreneurship",
     icon: TrendingUp,
     color: "bg-yellow-50 border-yellow-200",
     iconColor: "text-yellow-700",
@@ -52,6 +57,7 @@ const programmes = [
   {
     code: "BA",
     title: "Creative Arts: Music, Film & Theatre",
+    href: "/schools/creative-arts",
     icon: Music2,
     color: "bg-pink-50 border-pink-200",
     iconColor: "text-pink-700",
@@ -61,6 +67,7 @@ const programmes = [
   {
     code: "BA",
     title: "Fashion & Modeling",
+    href: "/departments/modeling",
     icon: Camera,
     color: "bg-rose-50 border-rose-200",
     iconColor: "text-rose-700",
@@ -70,6 +77,7 @@ const programmes = [
   {
     code: "BSc",
     title: "Politics / Executive Leadership / Management",
+    href: "/programmes/politics",
     icon: Globe2,
     color: "bg-teal-50 border-teal-200",
     iconColor: "text-teal-700",
@@ -79,6 +87,7 @@ const programmes = [
   {
     code: "BSc",
     title: "Strategic Studies / Intelligence Studies",
+    href: "/programmes/strategic-studies",
     icon: Shield,
     color: "bg-slate-50 border-slate-200",
     iconColor: "text-slate-700",
@@ -152,8 +161,9 @@ export default function Programmes() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.07 }}
-                className="bg-white rounded-2xl border border-border shadow-sm hover:shadow-xl hover:border-secondary/40 transition-all duration-300 flex flex-col overflow-hidden group"
+                className="bg-white rounded-2xl border border-border shadow-sm hover:shadow-xl hover:border-secondary/40 transition-all duration-300 flex flex-col overflow-hidden group cursor-pointer"
               >
+                <Link href={prog.href} className="flex flex-col flex-grow">
                 {/* Card Header */}
                 <div className={`p-6 border-b ${prog.color} flex items-start gap-4`}>
                   <div className={`w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0`}>
@@ -178,8 +188,12 @@ export default function Programmes() {
                         </li>
                       ))}
                     </ul>
+                    <div className="mt-5 flex items-center text-sm font-bold text-primary group-hover:text-secondary transition-colors">
+                      View Full Programme <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </div>
                   </div>
                 </div>
+                </Link>
               </motion.div>
             ))}
           </div>
