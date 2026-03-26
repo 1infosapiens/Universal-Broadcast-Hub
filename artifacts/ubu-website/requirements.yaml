@@ -1,0 +1,30 @@
+packages:
+  "framer-motion": "For elegant page transitions and scroll animations fitting a premium university"
+  "react-hook-form": "For robust contact and application forms"
+  "@hookform/resolvers": "Zod validation integration for forms"
+  "zod": "Schema validation for contact forms"
+
+images:
+  - path: "artifacts/ubu-website/public/images/campus-hero.png"
+    description: "Majestic university campus building with classical architecture, sunset lighting, professional, ultra realistic, cinematic"
+    aspect_ratio: "16:9"
+  - path: "artifacts/ubu-website/public/images/creative-arts.png"
+    description: "Abstract artistic studio with modeling runway and dramatic lighting, high fashion, elegant navy and gold tones"
+    aspect_ratio: "16:9"
+  - path: "artifacts/ubu-website/public/images/library-interior.png"
+    description: "Grand university library interior with rows of books, glowing reading lamps, modern study areas, academic excellence"
+    aspect_ratio: "16:9"
+  - path: "artifacts/ubu-website/public/images/performance-stage.png"
+    description: "Dramatic theatrical stage with spotlights and dancers in motion, professional theater, cinematic lighting"
+    aspect_ratio: "16:9"
+  - path: "artifacts/ubu-website/public/images/music-studio.png"
+    description: "High-end music recording studio mixing board with golden accents, professional sound engineering, moody lighting"
+    aspect_ratio: "16:9"
+  - path: "artifacts/ubu-website/public/images/students-gathering.png"
+    description: "Diverse group of university students collaborating in a modern sunny courtyard, professional, aspirational"
+    aspect_ratio: "16:9"
+
+notes:
+  - Mocking contact form API endpoint as there is no backend provided for it
+  - Utilizing wouter for routing with standard Link components
+  - Using generated images for all major hero banners to establish premium visual tone
