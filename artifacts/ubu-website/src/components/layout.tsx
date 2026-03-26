@@ -11,11 +11,11 @@ export function Layout({ children }: { children: ReactNode }) {
   const navLinks = [
     { label: "Home", href: "/" },
     { label: "About Us", href: "/about" },
+    { label: "Programmes", href: "/programmes" },
     {
       label: "Schools",
       items: [
         { label: "Creative Arts & Modeling", href: "/schools/creative-arts" },
-        // Business, Law, Communication would go here
       ]
     },
     {

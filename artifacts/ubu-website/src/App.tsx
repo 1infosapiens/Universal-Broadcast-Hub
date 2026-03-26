@@ -17,6 +17,7 @@ import Library from "@/pages/library";
 import Partners from "@/pages/partners";
 import Students from "@/pages/students";
 import Contact from "@/pages/contact";
+import Programmes from "@/pages/programmes";
 import NotFound from "@/pages/not-found";
 
 const queryClient = new QueryClient();
@@ -43,6 +44,7 @@ function Router() {
         <Route path="/partners" component={Partners} />
         <Route path="/students" component={Students} />
         <Route path="/contact" component={Contact} />
+        <Route path="/programmes" component={Programmes} />
 
         <Route component={NotFound} />
       </Switch>
