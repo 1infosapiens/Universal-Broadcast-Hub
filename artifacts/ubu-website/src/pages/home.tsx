@@ -55,13 +55,13 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="heading-md text-primary mb-6">Redefining Creative Education</h2>
+              <h2 className="heading-md text-primary mb-6">Education Is a Right, Not a Privilege</h2>
               <div className="w-20 h-1 bg-secondary mb-8"></div>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                At UBU, we believe creativity is not limited to a single discipline. Every artistic expression—whether music, modeling, dance, or film—is interconnected.
+                Universal Broadcasting University provides first-class education at zero or near-zero cost — removing money as a barrier and connecting the brightest professors to students everywhere, including the poorest communities across the globe.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                We nurture multi-talented individuals, globally competitive creatives, and industry-ready professionals equipped to shape the future of entertainment and arts.
+                Delivered via online platforms, radio, and television, UnibUni is the first of its kind: a truly global university where passion and commitment — not wealth — determine your right to excellence.
               </p>
               <Link 
                 href="/about" 
