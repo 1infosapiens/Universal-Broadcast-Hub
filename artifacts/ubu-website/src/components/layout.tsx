@@ -13,18 +13,13 @@ export function Layout({ children }: { children: ReactNode }) {
     { label: "About Us", href: "/about" },
     { label: "Programmes", href: "/programmes" },
     {
-      label: "Schools",
+      label: "Schools & Departments",
       items: [
-        { label: "Creative Arts & Modeling", href: "/schools/creative-arts" },
-      ]
-    },
-    {
-      label: "Departments",
-      items: [
-        { label: "Modeling", href: "/departments/modeling" },
-        { label: "Music", href: "/departments/music" },
-        { label: "Dance", href: "/departments/dance" },
-        { label: "Film & Theatre", href: "/departments/film-theatre" },
+        { label: "School of Creative Arts & Modeling", href: "/schools/creative-arts" },
+        { label: "Modeling Department", href: "/departments/modeling" },
+        { label: "Music Department", href: "/departments/music" },
+        { label: "Dance Department", href: "/departments/dance" },
+        { label: "Film & Theatre Department", href: "/departments/film-theatre" },
       ]
     },
     { label: "Faculty", href: "/faculty" },
@@ -213,12 +208,13 @@ export function Layout({ children }: { children: ReactNode }) {
             </div>
 
             <div>
-              <h3 className="font-display font-bold text-lg mb-6 text-secondary">Departments</h3>
+              <h3 className="font-display font-bold text-lg mb-6 text-secondary">Schools & Departments</h3>
               <ul className="space-y-3 text-sm text-white/70">
-                <li><Link href="/departments/modeling" className="hover:text-secondary transition-colors">Modeling</Link></li>
-                <li><Link href="/departments/music" className="hover:text-secondary transition-colors">Music</Link></li>
-                <li><Link href="/departments/dance" className="hover:text-secondary transition-colors">Dance</Link></li>
-                <li><Link href="/departments/film-theatre" className="hover:text-secondary transition-colors">Film & Theatre</Link></li>
+                <li><Link href="/schools/creative-arts" className="hover:text-secondary transition-colors">Creative Arts & Modeling</Link></li>
+                <li><Link href="/departments/modeling" className="hover:text-secondary transition-colors">Modeling Department</Link></li>
+                <li><Link href="/departments/music" className="hover:text-secondary transition-colors">Music Department</Link></li>
+                <li><Link href="/departments/dance" className="hover:text-secondary transition-colors">Dance Department</Link></li>
+                <li><Link href="/departments/film-theatre" className="hover:text-secondary transition-colors">Film & Theatre Department</Link></li>
               </ul>
             </div>
 
