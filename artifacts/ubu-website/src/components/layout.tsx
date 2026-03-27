@@ -55,7 +55,7 @@ export function Layout({ children }: { children: ReactNode }) {
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <Link href="/" className="flex items-center flex-shrink-0 group">
-              <img src="/logo.png" alt="Universal Broadcasting University" className="h-12 w-auto group-hover:scale-105 transition-transform duration-300" />
+              <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Universal Broadcasting University" className="h-12 w-auto group-hover:scale-105 transition-transform duration-300" />
               <div className="ml-3 hidden sm:block">
                 <span className="block font-display font-bold text-xl text-primary leading-none">Universal Broadcasting</span>
                 <span className="block font-sans text-xs tracking-widest text-secondary font-bold uppercase mt-1">University</span>
@@ -186,7 +186,7 @@ export function Layout({ children }: { children: ReactNode }) {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
             <div>
               <Link href="/" className="inline-block mb-6">
-                <img src="/logo.png" alt="UBU Logo" className="h-16 w-auto brightness-0 invert" />
+                <img src={`${import.meta.env.BASE_URL}logo.png`} alt="UBU Logo" className="h-16 w-auto brightness-0 invert" />
               </Link>
               <p className="text-white/70 text-sm leading-relaxed mb-6 text-balance">
                 Building globally relevant creative leaders who transcend boundaries and redefine excellence in arts, business, and innovation.
