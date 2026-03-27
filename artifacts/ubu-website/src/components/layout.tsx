@@ -235,7 +235,7 @@ export function Layout({ children }: { children: ReactNode }) {
                 </li>
                 <li className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-secondary shrink-0" />
-                  <span>+1 (555) 123-4567</span>
+                  <span>1-416-725-2961</span>
                 </li>
               </ul>
             </div>
