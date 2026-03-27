@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "hGZO9nK-LB2jxJTpjNOsU"
+uri = "file://ubu-website-dist.tar.gz"
+type = "unspecified"
+title = "UnibUni Website — Built Files (dist)"
